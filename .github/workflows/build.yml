@@ -99,7 +99,7 @@ jobs:
           cd kernel
 
           # Fix issues with avc selinux
-          patch -p1 < ../patches/security_selinux_avc.diff
+          patch -p1 < ../patches/avc_patch.diff
 
           # Copy SUSFS source files
           cp ../susfs4ksu/kernel_patches/fs/* ./fs/
