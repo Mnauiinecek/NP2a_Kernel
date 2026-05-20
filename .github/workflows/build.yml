@@ -177,6 +177,9 @@ jobs:
       - name: Build kernel
         run: |
           cd kernel
+          if [ -f version ]; then
+            cp version out/version
+          fi
           # Reduce parallel jobs to prevent memory exhaustion
           JOBS=$(( $(nproc) / 2 ))
           [ "$JOBS" -lt 1 ] && JOBS=1
