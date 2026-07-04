@@ -160,7 +160,7 @@ jobs:
             "${{ inputs.kernel_repo || 'https://github.com/LineageOS/android_kernel_nothing_sm8475.git' }}" \
             "$KERNEL_DIR"
 
-          git clone --depth=1 https://github.com/osm0sis/AnyKernel3.git "$ANYKERNEL_DIR"
+          git clone --depth=1 https://github.com/mistrmochov/AnyKernel3.git "$ANYKERNEL_DIR"
           rm -rf "$ANYKERNEL_DIR/.git"
 
       - name: Clone SUSFS
