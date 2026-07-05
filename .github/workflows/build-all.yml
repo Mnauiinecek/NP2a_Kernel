@@ -16,7 +16,7 @@ jobs:
           # Default Build (LineageOS)
           - name: LineageOS
             kernel_type: LineageOS
-            kpm_support: true
+
             susfs_support: true
             bbg_support: true
             susfs_force: false
@@ -29,7 +29,7 @@ jobs:
             kernel_defconfig: gki_defconfig
             extra_configs: vendor/waipio_GKI.config
             susfs_branch: gki-android13-5.10
-            kpm_support: true
+
             susfs_support: true
             bbg_support: true
             susfs_force: false
@@ -41,7 +41,7 @@ jobs:
             kernel_branch: master
             kernel_defconfig: /defconfig
             extra_patches_dir: patches/arter97
-            kpm_support: true
+
             susfs_support: true
             bbg_support: false
             susfs_force: false
@@ -54,7 +54,6 @@ jobs:
       kernel_defconfig: ${{ matrix.kernel_defconfig || 'gki_defconfig' }}
       extra_configs: ${{ matrix.extra_configs || '' }}
       extra_patches_dir: ${{ matrix.extra_patches_dir || '' }}
-      kpm_support: ${{ matrix.kpm_support }}
       susfs_support: ${{ matrix.susfs_support }}
       bbg_support: ${{ matrix.bbg_support }}
       susfs_force: ${{ matrix.susfs_force }}

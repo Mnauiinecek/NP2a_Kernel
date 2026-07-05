@@ -1,4 +1,14 @@
 # Changelog
+
+## v3.0.5 - The architecture update (Jul.1 2026)
+
+## New
+- Better build all system on the workflow
+- Improvements on anykernel3 script
+
+## Changes
+- Removed KPM Support (Dropped by ReSukiSU and the patching was tricky)
+
 > Updates not listed here are because there wasn't changes on the workflow, only updated upstream.
 
 ## v3.0.4 - The ReSukiSU Improvement (May.1 2026)
